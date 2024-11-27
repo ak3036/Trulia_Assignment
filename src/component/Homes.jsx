@@ -27,17 +27,13 @@ const Homes = () => {
           onClick={scrollLeft}
           className='absolute left-0 top-1/2 transform -translate-y-1/2 z-10  text-gray-800 rounded-full w-10 h-10 flex items-center justify-center'
         >
-          &#8249; {/* Unicode Left Arrow */}
+          &#8249; {/* Unicode for Left Arrow */}
         </button>
 
-        {/* Scrollable Cards Container */}
+        {/* Scrollable Cards */}
         <div
           ref={scrollContainerRef}
           className='flex space-x-4 overflow-x-auto scrollbar-hidden p-4'
-          style={{
-            scrollbarWidth: 'none', // Firefox
-            msOverflowStyle: 'none', // IE and Edge
-          }}
         >
           {homes.map((home, index) => (
             <Card

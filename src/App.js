@@ -1,5 +1,5 @@
 import './App.css';
-import Body from './component/Body';
+import SearchBar from './component/SearchBar';
 import Explore from './component/Explore';
 import Help from './component/Help';
 import Homes from './component/Homes';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='pt-16'>
       <Navbar />
-      <Body />
+      <SearchBar />
       <Explore />
       <Homes />
       <Help />

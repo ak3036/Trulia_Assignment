@@ -14,7 +14,7 @@ const Navbar = () => {
   const handleMouseLeave = () => {
     dropdownTimeoutRef.current = setTimeout(() => {
       setOpenDropdown(null); // Close the dropdown after a delay
-    }, 200); // Delay to allow smooth mouse movement
+    }, 200);
   };
 
   const navItems = [
@@ -57,14 +57,13 @@ const Navbar = () => {
   return (
     <header className='fixed top-0 left-0 right-0 z-50 bg-white shadow-md font-sans h-14'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between'>
-        {/* Left Side: Logo and Main Navigation */}
         <div className='flex items-center space-x-4'>
           {/* Logo */}
           <a href='/' className='inline-flex items-center mr-6'>
             <h1 className='text-2xl font-bold text-black'>trulia</h1>
           </a>
 
-          {/* Desktop Navigation - Main Tabs */}
+          {/* Drop down menu */}
           <nav className='hidden md:flex space-x-4'>
             {navItems.map((item) => (
               <div
@@ -102,7 +101,6 @@ const Navbar = () => {
           </nav>
         </div>
 
-        {/* Right Side: Saved Items and Sign Up */}
         <div className='hidden md:flex items-center space-x-4'>
           {/* Saved Navigation */}
           <nav className='flex space-x-4'>

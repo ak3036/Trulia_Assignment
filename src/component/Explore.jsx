@@ -6,7 +6,7 @@ const TruliaCards = () => {
 
   const scroll = (direction) => {
     if (scrollContainerRef.current) {
-      const scrollAmount = 1200; // Adjust scroll distance
+      const scrollAmount = 1200; // scroll distance
       scrollContainerRef.current.scrollBy({
         left: direction === 'right' ? scrollAmount : -scrollAmount,
         behavior: 'smooth',
@@ -146,9 +146,9 @@ const TruliaCards = () => {
                     </div>
                   );
                 }
-                return null; // Avoid rendering duplicate grids
+                return null;
               }
-              return null; // Fallback for other indexes
+              return null;
             })}
           </div>
         </div>

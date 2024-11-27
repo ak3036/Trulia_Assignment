@@ -7,11 +7,11 @@ import { FaCar } from 'react-icons/fa';
 const RealEstateSearch = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [searchText, setSearchText] = useState('');
-  const [selectedButton, setSelectedButton] = useState('Buy'); // Default selected button is "Buy"
-  const [searchResults, setSearchResults] = useState([]); // Results to display
-  const [loading, setLoading] = useState(false); // Loading state for debouncing
+  const [selectedButton, setSelectedButton] = useState('Buy');
+  const [searchResults, setSearchResults] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-  // Dummy data for search suggestions
+  // Dummy data for debouncing
   const dummyData = [
     'New York',
     'San Francisco',
