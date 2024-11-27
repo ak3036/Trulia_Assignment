@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Card from './Card';
-import { homes } from './mockData';
+import { homes } from '../utils/mockData';
 
 const Homes = () => {
   const scrollContainerRef = useRef(null);

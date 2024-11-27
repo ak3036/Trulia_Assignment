@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { data } from './mockData';
+import { data } from '../utils/mockData';
 
 const TruliaCards = () => {
   const scrollContainerRef = useRef(null);
